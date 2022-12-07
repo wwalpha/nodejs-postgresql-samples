@@ -21,6 +21,14 @@ export PGDATABASE=mydb
 export PGPORT=5432
 ```
 
+- Import postgresql sample database
+
+```bash
+psql -d postgres -c "create database dvdrental;"
+pg_restore -d dvdrental dvdrental.tar
+psql -d dvdrental -c "\dt"
+```
+
 - Install nodejs libraries
 
 ```bash
