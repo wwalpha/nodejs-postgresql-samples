@@ -21,9 +21,11 @@ export PGDATABASE=mydb
 export PGPORT=5432
 ```
 
-- Import postgresql sample database
+- Create postgresql sample database
 
 ```bash
+curl -O https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip
+unzip dvdrental.zip
 psql -d postgres -c "create database dvdrental;"
 pg_restore -d dvdrental dvdrental.tar
 psql -d dvdrental -c "\dt"
