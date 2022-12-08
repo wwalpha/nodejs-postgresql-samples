@@ -24,10 +24,15 @@ export PGPORT=5432
 - Create postgresql sample database
 
 ```bash
+# download sample database file
 curl -O https://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip
 unzip dvdrental.zip
+
+# create sampole database
 psql -d postgres -c "create database dvdrental;"
 pg_restore -d dvdrental dvdrental.tar
+
+# check database tables
 psql -d dvdrental -c "\dt"
 ```
 
