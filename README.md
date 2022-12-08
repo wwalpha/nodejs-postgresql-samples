@@ -2,7 +2,7 @@
 
 ## Prerequisite (Ubuntu)
 
-- PostgreSQL client 13 install
+- PostgreSQL client 13 installation
 
 ```bash
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
