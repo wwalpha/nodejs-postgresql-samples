@@ -11,14 +11,14 @@ sudo apt update
 sudo apt install -y postgresql-client-13
 ```
 
-- Set environment variables
+- Set environment variables in `.env`
 
 ```bash
-export PGUSER=dbuser
-export PGHOST=database.server.com
-export PGPASSWORD=secretpassword
-export PGDATABASE=mydb
-export PGPORT=5432
+PGUSER=dbuser
+PGHOST=database.server.com
+PGPASSWORD=secretpassword
+PGDATABASE=mydb
+PGPORT=5432
 ```
 
 - Create postgresql sample database
